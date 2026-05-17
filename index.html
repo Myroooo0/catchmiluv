@@ -434,7 +434,7 @@ function endGame() {
   clearInterval(spawnInt); clearInterval(tickInt); cancelAnimationFrame(rafId);
   drops.forEach(d => d.el.remove()); drops = [];
   if (score > best) { best = score; bv.textContent = best; }
-  const msg = score >= 20 ? 'You caught them all — so in love! 💖'
+  const msg = score >= 20 ? 'You caught all of me — so in love! 💖'
             : score >= 10 ? 'Great catch! Try again? 🌸'
             : 'D mo n q luv :<';
   showScreen(`
@@ -455,7 +455,7 @@ document.getElementById('restart-btn').onclick = () => {
   showScreen(`
     <div style="font-size:48px;">💖</div>
     <h3>Catch My Love!</h3>
-    <p>Move your mouse to catch the good photos.<br>Avoid the wrong ones — they cost 3 points!</p>
+    <p>Move your mouse to catch the good myro.<br>Avoid the wrong ones — they cost 3 points!</p>
     <button onclick="startGame()">▶ Start Game</button>
   `);
 };
